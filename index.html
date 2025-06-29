@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>欠席カウンター</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>授業の欠席管理</h1>
+
+<form id="classForm">
+  <input type="text" id="className" placeholder="授業名" required />
+  <input type="number" id="maxAbsence" placeholder="欠席上限" required />
+
+  <select id="dayOfWeek" required>
+    <option value="">曜日を選択</option>
+    <option value="月">月</option>
+    <option value="火">火</option>
+    <option value="水">水</option>
+    <option value="木">木</option>
+    <option value="金">金</option>
+  </select>
+
+  <select id="period" required>
+    <option value="">何限か</option>
+    <option value="1">1限</option>
+    <option value="2">2限</option>
+    <option value="3">3限</option>
+    <option value="4">4限</option>
+    <option value="5">5限</option>
+    <option value="6">6限</option>
+  </select>
+
+  <label>
+    <input type="checkbox" id="takeAttendance" />
+    出席を取る
+  </label>
+  <button type="submit">授業を追加</button>
+</form>
+
+
+  <div id="classList"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
